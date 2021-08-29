@@ -97,31 +97,43 @@ fieldset{
     margin-bottom:20px ; 
 }
 
+
 .grupoId{
-display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.grupoEnd{
     display: flex;
-  flex-wrap: wrap;
-}
-
-.grupoLocalidade{
+      flex-wrap: wrap;
+    }
+    .grupoId > div{
+        flex: 1 1 200px;
+    }
     
-    display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+    
+    .grupoEnd{
+        display: flex;
+      flex-wrap: wrap;
+    }
+    .grupoEnd > div{
+        flex: 1 1 200px;
+    }
+    
+    
+    .grupoLocalidade{ 
+        display: flex;
+      flex-wrap: wrap;
+    }
+    .grupoLocalidade > div{
+        flex: 1 1 200px;
+    }
+    
+    
+    .grupoContato{
+        display: flex;
+      flex-wrap: wrap;
+    }
+    .grupoContato > div{
+        flex: 1 1 200px;
+    }
 
-.grupoContato{
-   
-    display: flex;
-  flex-wrap: wrap;
-  
-}
-
+    
 .botao{
     padding: 0.7em;
     border-radius: 5px;
