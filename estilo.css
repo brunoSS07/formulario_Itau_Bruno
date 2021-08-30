@@ -34,6 +34,7 @@ header{
     margin-left: auto;
     margin-right: auto;
     display: block;
+    max-width: 800px;
 }
 
 h1{
@@ -65,7 +66,7 @@ p{
     font-family: sans-serif;
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    display: block; /* permite que minhas configurações assumam a configução padrão.*/
     width: 70%;
     padding-top: 10px;
 }
@@ -99,11 +100,11 @@ fieldset{
 
 
 .grupoId{
-    display: flex;
-      flex-wrap: wrap;
+    display: flex; /* item um do lado do outro */
+      flex-wrap: wrap; /*  indica que ele pode quebrar */
     }
     .grupoId > div{
-        flex: 1 1 200px;
+        flex: 1 1 200px; /*  permitir que ele se expanda e fique menor, quebra ao chegar em 200px*/
     }
     
     
@@ -133,7 +134,7 @@ fieldset{
         flex: 1 1 200px;
     }
 
-    
+
 .botao{
     padding: 0.7em;
     border-radius: 5px;
@@ -164,8 +165,9 @@ label{
 
 .obrigatorio{
     margin: auto;
-    width: 70%;
+    width: 67%;
     display: block;
+    max-width: 800px;
 }
 
 a{
