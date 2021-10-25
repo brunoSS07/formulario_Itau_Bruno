@@ -35,7 +35,7 @@ header{
     margin-right: auto;
     display: block;
     max-width: 800px;
-    
+    min-width: 500px;
 }
 
 h1{
@@ -198,3 +198,28 @@ option{
     font-size: 20px;
 }
 
+/*arrumando resp CPF*/
+div#alinharRespCPF{
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+div#aliRespCPF{
+    display: flex;
+    float: right;
+    
+}
+
+div#aliEmojiCPF{
+    display: flex;
+    float: right;
+}
+
+input#cpf_digitado{
+    width: 100%;
+}
+
+p#RespCPF{
+    
+    width: 10px;
+}
