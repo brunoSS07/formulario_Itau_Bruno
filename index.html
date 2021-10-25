@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css" type="text/css">
-    <title>Formulario de Cadastro</title>
     <script type="text/javascript" src="validacao.js"></script>
+    <title>Formulario de Cadastro</title>
+    
 
 </head>
 <body>
@@ -16,11 +17,12 @@
        </div>
     </header>
 
-    <form class="container" action="" method="GET" onsubmit="return valida();" >
+    <form class="container" action="" method="GET" onsubmit="envioCPF();" >
          <div>
             <h1>Cadastro Pessoal</h1>
-            <p>PREENCHA O FORMULÁRIO ABAIXO PARA ABRIR SUA CONTA</p><br>
+            <p>Faça-nos um cadastro pessoal para abrir uma conta pessoal</p><br>
         </div>
+
         <hr>
 
         <div class="campo"><br>
@@ -29,14 +31,19 @@
             <br>
         </div>
             <hr>
+
             <fieldset class="grupoId">
                 <div class="campo">
-                    <label for="cpf"> CPF/CNPJ* </label>
-                    <input type="text" name="cpf" id="cpf" placeholder="XXX.XXX.XXX.XX" onblur="return verificarCPF(this.value);" required>
+                    
+                    <div id="aliEmojiCPF"> <label for="cpf"> CPF/CNPJ* </label><p id="respCPF"></p></div>
+                   <div id="aliRespCPF">
+                <input type="text" name="cpf" id="cpf_digitado" placeholder="XXX.XXX.XXX-XX" onkeyup="mascara_cpf()" autocomplete="off" maxlength="14" onblur="return verificarCPF(this.value);" required>
                 </div>
+                </div>
+                
                 <div class="campo">
                     <label for="rg">RG </label>
-                    <input type="number" name="rg" id="rg" placeholder="XX.XXX.XXX-X">
+                    <input type="text" name="rg" id="rg"  placeholder="XX.XXX.XXX-X" onkeyup="mascara_rg()" maxlength="12">
                 </div>
                 <div class="campo">
                    <label for="sexo">Sexo</label>
@@ -48,7 +55,9 @@
                     </select>
                 </div>
             </fieldset>
+            
             <hr>
+
             <fieldset class="grupoEnd">
                 <div class="campo">
                     <label for="endereco">Endereço*</label>
@@ -56,7 +65,7 @@
                 </div>
                 <div class="campo">
                     <label for="numero">Numero*</label>
-                    <input type="number" name="numero" id="numero" placeholder="Numero da residência">
+                    <input type="number" name="numero" id="numero" placeholder="Numero da residência" >
                 </div>
             </fieldset>
             <hr>
@@ -66,7 +75,9 @@
                     <input type="text" name="bairro" id="bairro" placeholder="Coloque seu bairro"> 
                 </div>
             </fieldset>
+
             <hr>
+
             <fieldset class="grupoLocalidade">
                 <div class="campo">
                     <label for="cidade">Cidade</label>
@@ -114,7 +125,7 @@
             <fieldset class="grupoContato">
                 <div class="campo">
                     <label for="fixo">Telefone fixo*</label>
-                    <input type="text" name="fixo" id="fixo" placeholder="(XX) XXXX-XXXX">
+                    <input type="text" name="fixo" id="fixo" placeholder="(XX) XXXX-XXXX" >
                 </div>
                 <div class="campo">
                     <label for="cel">Celular*</label>
@@ -125,14 +136,15 @@
             <br>
             <div class="campobotao">
                 <button class="botao" type="botao" name="botao" id="botao"> ENVIAR</button>
+                
             </div>
-            <br>
-    </form>
+             <br>
+        </form>
 
     <div class="obrigatorio">
         <h3>*Obrigatório</h3>
     </div>
-
+    
     <footer>
         <div class="rodape">
             <div class="ajusteRodape">

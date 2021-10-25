@@ -35,6 +35,7 @@ header{
     margin-right: auto;
     display: block;
     max-width: 800px;
+    
 }
 
 h1{
@@ -189,8 +190,7 @@ a:hover{
     
 }
 .campo > *{
-   flex: 1 1 100%;
-   
+flex: 1 1 100%;
 }
 
 option{
